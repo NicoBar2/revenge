@@ -1,12 +1,26 @@
-<div class="sunflowers"></div>
-<div class="container">
-  <div class="card">
-    <h1 class="title">Eres mi sol en un campo de girasoles 🌻💛</h1>
-    <button class="invite-btn" onclick="showSurprise()">Descubre mi invitación</button>
-    <div class="surprise hidden">
-      En este día de San Valentín, quiero regalarte más que una invitación:  
-      un momento, un recuerdo, y un lugar donde siempre brille el sol,  
-      contigo como mi eterno girasol. 🌻
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación de San Valentín</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sunflowers"></div>
+  <div class="container">
+    <div class="card">
+      <h1 class="title">Eres mi sol en un campo de girasoles 🌻💛</h1>
+      <button class="invite-btn" onclick="showSurprise()">Descubre mi invitación</button>
+      <div class="surprise hidden">
+        En este día de San Valentín, quiero regalarte más que una invitación: un momento, un recuerdo, y un lugar donde siempre brille el sol, contigo como mi eterno girasol. 🌻
+      </div>
     </div>
   </div>
-</div>
+  <script>
+    function showSurprise() {
+      document.querySelector('.surprise').classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
